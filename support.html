@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - AreaCalc Pro Sq FT</title>
+    <meta name="description" content="Get help and support for AreaCalc Pro Sq FT. Find answers to common questions and contact us for assistance.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #007AFF;
+            --primary-dark: #0056b3;
+            --text: #1d1d1f;
+            --text-secondary: #86868b;
+            --bg: #ffffff;
+            --bg-secondary: #f5f5f7;
+            --border: #d2d2d7;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.25rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Main Content */
+        main {
+            padding: 60px 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .intro {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 48px;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        ul, ol {
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .faq-item {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+
+        .faq-item h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        .faq-item p:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, var(--primary) 0%, #5856D6 100%);
+            color: white;
+            padding: 32px;
+            border-radius: 16px;
+            margin-top: 48px;
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            color: white;
+            border: none;
+            margin-top: 0;
+            padding-bottom: 0;
+        }
+
+        .contact-box p {
+            opacity: 0.9;
+        }
+
+        .contact-box a {
+            color: white;
+            font-weight: 600;
+        }
+
+        .email-button {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 12px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 16px;
+            transition: transform 0.2s;
+        }
+
+        .email-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📐</span>
+                AreaCalc Pro
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Support</h1>
+            <p class="intro">Need help with AreaCalc Pro Sq FT? Find answers to common questions below or contact us directly.</p>
+
+            <h2>Getting Started</h2>
+            
+            <h3>Creating Your First Project</h3>
+            <ol>
+                <li>Open AreaCalc Pro and tap <strong>"New Project"</strong></li>
+                <li>Give your project a name (e.g., "Living Room Flooring")</li>
+                <li>Tap <strong>"Add Rectangle"</strong> to add your first area</li>
+                <li>Enter the dimensions in feet and inches</li>
+                <li>Your total area is calculated automatically</li>
+            </ol>
+
+            <h3>Adding Multiple Areas</h3>
+            <p>You can add as many rectangles as needed to a single project. Simply tap "Add Rectangle" for each new area. Each rectangle can be named for easy reference (e.g., "Kitchen", "Hallway", "Bedroom 1").</p>
+
+            <h3>Using the Quantity Feature</h3>
+            <p>If you have multiple identical areas (like windows or tiles), use the quantity multiplier instead of adding each one separately. In the rectangle editor, adjust the quantity to multiply that area.</p>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>How do I change units from feet to meters?</h3>
+                <p>Go to <strong>Settings</strong> and tap on the unit selector. You can choose between Square Feet (ft²), Square Meters (m²), or Square Inches (in²). When using meters, enter dimensions in meters and centimeters.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How does the pricing calculator work?</h3>
+                <p>In Settings, make sure "Show Pricing" is enabled. In your project, enter your price per unit (e.g., $5 per square foot for flooring). The app will automatically calculate the total cost based on your total area.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I save my projects?</h3>
+                <p>Yes! All projects are automatically saved to your device. Tap "Load Project" on the home screen to access your saved projects.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I export my calculations?</h3>
+                <p>Open your project and tap <strong>"Export"</strong> in the top right corner. You can copy the data to your clipboard or share it via email, messages, or other apps. The export includes all rectangles, dimensions, areas, and pricing (if enabled).</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I delete a rectangle?</h3>
+                <p>In the project view, tap the red <strong>X</strong> button next to the rectangle you want to remove.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I change the app theme?</h3>
+                <p>Go to <strong>Settings</strong> and select your preferred theme: Light, Dark, or Auto (follows your device settings).</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is my data backed up?</h3>
+                <p>Your projects are stored locally on your device. We recommend exporting important projects to keep a backup. The app does not sync data to the cloud.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>The app is showing incorrect calculations. What should I do?</h3>
+                <p>Double-check your dimension inputs. Make sure you're entering feet and inches separately (not combining them). Also verify the correct unit is selected in Settings. If issues persist, please contact us.</p>
+            </div>
+
+            <div class="contact-box">
+                <h2>Still Need Help?</h2>
+                <p>We're here to help! Contact us with any questions, feedback, or feature requests.</p>
+                <a href="mailto:snrgwa@gmail.com" class="email-button">Email Support</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">© 2025 AreaCalc Pro. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="support.html">Support</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="mailto:snrgwa@gmail.com">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
