@@ -346,7 +346,23 @@
                 justify-content: center;
             }
         }
-    </style>
+    
+        /* ===== Large displays =====
+           The shell was pinned at 1200px, which on a 2560px monitor reads as a
+           narrow column adrift in empty space. Widen the shell AND scale the
+           root font size, so type, spacing and imagery all grow together —
+           widening alone just stretches the gaps. */
+        @media (min-width: 1500px) {
+            :root { font-size: 17.5px; }
+            .container { max-width: 1320px; }
+            .hero-image { max-width: 380px; }
+        }
+        @media (min-width: 2000px) {
+            :root { font-size: 19px; }
+            .container { max-width: 1560px; }
+            .hero-image { max-width: 460px; }
+        }
+</style>
 </head>
 <body>
     <header>

@@ -253,7 +253,24 @@
                 justify-content: center;
             }
         }
-    </style>
+    
+        /* ===== Large displays =====
+           The chrome was pinned at 1200px, which on a 2560px monitor reads as a
+           narrow column adrift in empty space. Widen the header/footer rails and
+           scale the root font size so type and spacing grow together. The prose
+           column deliberately keeps a narrower measure — long legal text run to
+           the full window width is worse than the original problem. */
+        @media (min-width: 1500px) {
+            :root { font-size: 17.5px; }
+            nav, .footer-content { max-width: 1320px; }
+            .container { max-width: 68ch; }
+        }
+        @media (min-width: 2000px) {
+            :root { font-size: 19px; }
+            nav, .footer-content { max-width: 1560px; }
+            .container { max-width: 70ch; }
+        }
+</style>
 </head>
 <body>
     <header>
