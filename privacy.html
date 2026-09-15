@@ -247,7 +247,7 @@
     <main>
         <div class="container">
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last Updated: January 28, 2025</p>
+            <p class="last-updated">Last Updated: September 15, 2026</p>
 
             <div class="highlight-box">
                 <p><strong>Summary:</strong> AreaCalc Pro Sq FT does not collect, store, or transmit any personal data. All your project data stays on your device.</p>
@@ -260,7 +260,7 @@
             <p>AreaCalc Pro Sq FT is designed with privacy in mind. We do not collect, store, or transmit any of the following:</p>
             <ul>
                 <li>Personal identification information (name, email, phone number)</li>
-                <li>Location data</li>
+                <li>Background or continuous location tracking</li>
                 <li>Device identifiers</li>
                 <li>Usage analytics or statistics</li>
                 <li>Project data or measurements you enter</li>
@@ -271,14 +271,29 @@
             <p>All data you create within the app, including:</p>
             <ul>
                 <li>Project names</li>
-                <li>Rectangle measurements</li>
+                <li>Section measurements and shapes</li>
                 <li>Pricing information</li>
                 <li>App settings and preferences</li>
             </ul>
             <p>is stored locally on your device only. This data never leaves your device and is not transmitted to any external servers.</p>
 
             <h2>Third-Party Services</h2>
-            <p>AreaCalc Pro Sq FT does not integrate with any third-party analytics, advertising, or tracking services. The app operates entirely offline and does not require an internet connection to function.</p>
+            <p>AreaCalc Pro Sq FT does not integrate with any third-party analytics, advertising, or tracking services, and it does not use any third-party SDKs. Measuring, saving and exporting all work with no internet connection.</p>
+            <p>Three optional features do reach the network, and all three talk only to Apple:</p>
+            <ul>
+                <li><strong>In-app purchases.</strong> Pro is sold through Apple's App Store using StoreKit. Apple processes the payment; we never see your payment details, name or Apple Account.</li>
+                <li><strong>Filling in a job address.</strong> Described under Location below.</li>
+                <li><strong>The update check.</strong> On launch, at most once a day, the app asks Apple's public App Store lookup service whether a newer version exists. The request contains only the app's identifier — nothing about you or your projects.</li>
+            </ul>
+
+            <h2>Location</h2>
+            <p>If you turn on Job Details and tap the address button, the app asks iOS for your current location once, converts it into a street address, and writes that address into the project on your device.</p>
+            <ul>
+                <li>Location is requested <strong>only</strong> when you tap that button — never in the background, and never continuously.</li>
+                <li>The coordinates are sent to Apple's geocoding service to be turned into an address. That request is handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
+                <li>The resulting address is stored in your project on your device. It is not sent to us, and we never receive your coordinates.</li>
+                <li>You can decline the permission, or revoke it later in iOS Settings, and every other feature keeps working.</li>
+            </ul>
 
             <h2>Data Sharing</h2>
             <p>Since we do not collect any data, we have no data to share with third parties. When you use the export or share feature, the data is shared directly from your device to your chosen destination (email, messages, etc.) and does not pass through our servers.</p>
