@@ -247,10 +247,10 @@
     <main>
         <div class="container">
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last Updated: October 14, 2026</p>
+            <p class="last-updated">Last Updated: October 19, 2026</p>
 
             <div class="highlight-box">
-                <p><strong>Summary:</strong> Your projects, measurements and quotes stay on your device. We never receive them. The app does send anonymous usage statistics so we can see which features matter and catch crashes, and you can switch that off in Settings &rsaquo; Privacy. There are no ads, no trackers and no account to create.</p>
+                <p><strong>Summary:</strong> Your projects, measurements, quotes and customer details are stored on your device, and with Pro they can also sync through your own iCloud account. We never receive them. The app does send anonymous usage statistics so we can see which features matter and catch crashes, and you can switch that off in Settings &rsaquo; Privacy. There are no ads, no trackers and no account to create.</p>
             </div>
 
             <h2>Introduction</h2>
@@ -264,7 +264,7 @@
                 <li>Your IP address. Our servers do not store it or use it.</li>
                 <li>Advertising identifier (IDFA) or vendor identifier (IDFV)</li>
                 <li>Receipts, transaction identifiers or the prices you paid</li>
-                <li>Project data you enter: project names, job addresses, client contacts, measurements or quotes</li>
+                <li>Project data you enter: project names, measurements, quotes, customer names, job addresses, client phone numbers and emails, or job notes</li>
                 <li>Any other personal or sensitive information</li>
             </ul>
             <p>The one thing the app does send is anonymous usage statistics, described in the next section. You can turn them off.</p>
@@ -282,45 +282,67 @@
             </ul>
 
             <h2>Data Storage</h2>
-            <p>All data you create within the app, including:</p>
+            <p>Everything you create in the app, including:</p>
             <ul>
-                <li>Project names</li>
-                <li>Section measurements and shapes</li>
+                <li>Project names, sections, measurements and shapes</li>
                 <li>Pricing information</li>
+                <li>Customer name, job address, client phone and email, and job notes</li>
+                <li>Your business details (Settings &rsaquo; Your Business)</li>
                 <li>App settings and preferences</li>
             </ul>
-            <p>is stored locally on your device only. We never receive it, and it is never uploaded to our servers. The only information that leaves your device for us is the anonymous usage statistics described above, and only while that setting is on. Measuring, saving and exporting all work with no internet connection.</p>
+            <p>is stored on your device. We never receive it, and it is never uploaded to our servers. If you use Pro's iCloud Sync, your projects are also kept in your own iCloud account, as described below. The only information that leaves your device for us is the anonymous usage statistics described above, and only while that setting is on. Measuring, saving and exporting all work with no internet connection.</p>
+
+            <h2>iCloud Sync (Pro)</h2>
+            <p>With Pro, your projects stay in step across your iPhone and iPad through your own iCloud account.</p>
+            <ul>
+                <li><strong>On by default for Pro.</strong> You can turn it off or on any time in Settings &rsaquo; iCloud &amp; Backup &rsaquo; <em>iCloud Sync</em>.</li>
+                <li><strong>Your iCloud, not our servers.</strong> Sync uses Apple's iCloud key-value storage in your own iCloud account. The data is stored and protected by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>, and we cannot access it.</li>
+                <li><strong>What syncs:</strong> your projects, including customer details and notes, and the project-numbering counter. Your business details and app settings stay on each device.</li>
+                <li><strong>Deleting a project</strong> while sync is on removes it from all your devices.</li>
+                <li><strong>Turning sync off</strong> stops syncing and keeps the copy already in iCloud. To delete that copy, use <em>Remove Projects from iCloud&hellip;</em> in Settings &rsaquo; iCloud &amp; Backup. The projects on your device are kept.</li>
+                <li><strong>Changing Apple Account:</strong> if the device signs in to a different Apple Account, sync pauses and asks before adding your projects to the new account.</li>
+                <li>If you are not signed in to iCloud, nothing syncs and everything stays on the device.</li>
+            </ul>
+
+            <h2>Backups and Exports</h2>
+            <ul>
+                <li><strong>Backups (Pro).</strong> <em>Back Up Projects&hellip;</em> saves a backup file wherever you choose, such as Files or iCloud Drive. <em>Import Backup&hellip;</em> adds the projects from such a file and never overwrites the ones you already have.</li>
+                <li><strong>Exports (Pro).</strong> A PDF estimate, which includes your business details, and a CSV file. Both contain your sections, totals and pricing, plus any customer details and notes in the project.</li>
+                <li>Backups and exports go only where you send or save them. They never pass through our servers.</li>
+            </ul>
 
             <h2>Third-Party Services</h2>
             <p>AreaCalc Pro Sq FT contains no advertising, no advertising SDK and no cross-app tracking. It uses our own analytics, not a third-party analytics service.</p>
             <ul>
                 <li><strong>Supabase</strong> hosts our anonymous usage statistics on our behalf, as described above. It does not use the data for its own purposes.</li>
             </ul>
-            <p>Three further features reach the network, and all three talk only to Apple:</p>
+            <p>Four further features reach the network, and all four talk only to Apple:</p>
             <ul>
                 <li><strong>In-app purchases.</strong> Pro is sold through Apple's App Store using StoreKit. Apple processes the payment; we never see your payment details, name or Apple Account.</li>
+                <li><strong>iCloud Sync (Pro).</strong> Described under iCloud Sync above.</li>
                 <li><strong>Filling in a job address.</strong> Described under Location below.</li>
                 <li><strong>The update check.</strong> On launch, at most once a day, the app asks Apple's public App Store lookup service whether a newer version exists. The request contains only the app's identifier — nothing about you or your projects.</li>
             </ul>
 
             <h2>Location</h2>
-            <p>If you turn on Job Details and tap the address button, the app asks iOS for your current location once, converts it into a street address, and writes that address into the project on your device.</p>
+            <p>With Pro, in a project's Project Details you can tap the location button next to the job address. The app then asks iOS once for a one-time location, converts it into a street address, and writes that address into the project.</p>
             <ul>
                 <li>Location is requested <strong>only</strong> when you tap that button — never in the background, and never continuously.</li>
                 <li>The coordinates are sent to Apple's geocoding service to be turned into an address. That request is handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
-                <li>The resulting address is stored in your project on your device. It is not sent to us, and we never receive your coordinates.</li>
+                <li>The resulting address is saved in your project (and synced through your iCloud if iCloud Sync is on). It is not sent to us, and we never store or receive your coordinates.</li>
+                <li><strong>Directions</strong> opens the job address in Apple Maps.</li>
                 <li>You can decline the permission, or revoke it later in iOS Settings, and every other feature keeps working.</li>
             </ul>
 
             <h2>Data Sharing</h2>
-            <p>We do not sell, trade or rent data to anyone. The anonymous usage statistics stay with us and with Supabase, who store them for us. We may disclose information if the law requires it. When you use the export or share feature, your takeoff goes directly from your device to the destination you choose, such as email or messages, and never passes through our servers.</p>
+            <p>We do not sell, trade or rent data to anyone. The anonymous usage statistics stay with us and with Supabase, who store them for us. We may disclose information if the law requires it. When you export, share or back up, the file goes directly from your device to the destination you choose, such as email or messages, and never passes through our servers.</p>
 
             <h2>Data Security</h2>
             <p>Your project data is protected by your device's built-in security features. We recommend:</p>
             <ul>
                 <li>Using a device passcode or biometric lock</li>
                 <li>Keeping your device's operating system updated</li>
-                <li>Exporting important projects to maintain backups</li>
+                <li>Using iCloud Sync or <em>Back Up Projects&hellip;</em> (Pro) to keep a copy of important projects</li>
             </ul>
 
             <h2>Children's Privacy</h2>
@@ -335,6 +357,7 @@
                 <li><strong>Turn off usage statistics</strong> in Settings &rsaquo; Privacy &rsaquo; <em>Share Usage Data</em>.</li>
                 <li><strong>Delete usage statistics already sent</strong> by emailing us the Installation ID shown in Settings &rsaquo; Privacy.</li>
                 <li><strong>Delete your project data</strong> in the app at any time, or by deleting the app, which removes everything stored on your device.</li>
+                <li><strong>Delete your iCloud copy.</strong> Deleting the app does not remove projects already synced to your iCloud. Use <em>Remove Projects from iCloud&hellip;</em> in Settings &rsaquo; iCloud &amp; Backup first if you want that copy gone too.</li>
             </ul>
 
             <h2>Contact Us</h2>
